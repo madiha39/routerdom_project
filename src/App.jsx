@@ -6,7 +6,7 @@ import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import Dashboard from "./pages/Dashboard";
 import NotFound from "./pages/NotFound";
-
+import Login from "./pages/Login";
 const App = () => {
   return (
     <div>
@@ -18,6 +18,7 @@ const App = () => {
         <Route path="/about" element={<About />} />
         <Route path="/dashboard" element={<Dashboard />} />
         <Route path="*" element={<NotFound />} />
+        <Route path="/login" element={<Login />} />
       </Routes>
       <Footer />
     </div>
